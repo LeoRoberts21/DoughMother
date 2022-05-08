@@ -46,7 +46,7 @@
 /*--------------------------------------- */ 
 
 .nav-bar {
-    
+    @include flex(space-between);
 }
 
 .vert-lines {
