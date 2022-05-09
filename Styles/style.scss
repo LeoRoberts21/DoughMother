@@ -183,12 +183,77 @@ h2 {
 /*------------scroll-section----------------------*/
 
 .scroll-section {
+    @include flex(space-between, row);
+    @include sideMargin(10px,10px );
+
+    .scroll-text {
+      @include flex(center, column);
+      @include sideMargin(10px,10px );
+      gap: 25px;
+    }
+}
+
+/*------------article----------------------------*/
+
+.double-img {
     @include flex(space-evenly, row);
+    @include sideMargin(10px,10px );
+
+    .double-image-inner {
+      @include flex(space-evenly, column);
+      align-items: flex-start;
+    }  
+}
+
+.location {
+    @include flex(space-between, row);
+    @include sideMargin(10px,10px );
+
+    .location-text {
+        @include flex(space-evenly, column);
+        align-items: flex-start;
+    }
+}
+
+.ng {
+    @include flex(space-between, column);
+    align-items: center;
+}
+
+/*------------mail-list---------------------------*/
+
+h6 {
+    text-align: center;
+}
+
+.mail-info {
+    @include flex(space-between, row);
+    gap: 50px;
+    width: 1337px;
+    @include sideMargin(10px,10px );
+
+    .mail-text {
+    @include width(300px);
+    }
+}
+
+.email-form {
+    text-align: center;
     @include sideMargin(10px,10px );
 }
 
-.scroll-text {
-    @include flex(center, column);
-    @include sideMargin(10px,10px );
-    gap: 25px;
+/*------------footer---------------------------*/
+
+.footer-section {
+    @include flex(space-between, row);
+    margin-top: 50px;
+    padding: 50px 50px 50px 50px;
+    background-color: aquamarine;
+    gap: 50px;
+
+
+    .footer-mid {
+        @include flex(space-between, column);
+        align-items: flex-start;
+    }
 }
