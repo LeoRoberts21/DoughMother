@@ -1,9 +1,9 @@
 
 /*mixins*/
 
-@mixin flex($justify) {
+@mixin flex($justify,$direction) {
     display: flex;
-    flex-direction: row;
+    flex-direction: $direction;
     justify-content:$justify;
     align-self: center;
     align-items: center;
@@ -19,10 +19,10 @@
     height: auto;
 }
 
-/*--------------------------------------- */ 
+/*------------top-bar-------------------------*/
 
 .top-bar {
-    @include flex(space-between);
+    @include flex(space-between, row);
     @include sideMargin(0px, 0px);
     
       .icons {
@@ -42,21 +42,21 @@
     }  
 }
 
-
-/*--------------------------------------- */ 
+/*------------nav-bar-------------------------*/
 
 .nav-bar {
-    @include flex(space-between);
-}
-
-.vert-lines {
-  border: 0;
-  clear:both;
-  display:block;
-  width: 1px;               
-  background-color:#000000;
-  height: 75px;
-  @include sideMargin(10px, 10px);
+    @include flex(space-between, row);
+    list-style: none;
+   
+     .vert-lines {
+     border: 0;
+     clear:both;
+     display:block;
+     width: 1px;               
+     background-color:#000000;
+     height: 75px;
+     @include sideMargin(10px, 10px);
+   }
 }
 
 .horiz-lines {
@@ -69,3 +69,22 @@
     @include sideMargin(10px, 10px);
 }
 
+/*------------hero-------------------------*/
+
+.hero {
+    @include flex(center, row);
+    @include sideMargin(10px,10px );
+    height: 500px;
+
+    .hero-left {
+        flex: 1;
+        @include flex(space-between, column);
+        align-items: flex-start;
+    }
+    .hero-right {
+        flex: 1;
+        @include flex(center, row);
+    }
+}
+
+/*------------moving-sec-------------------------*/
