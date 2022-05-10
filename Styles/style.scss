@@ -29,6 +29,7 @@
 $bodyfont: 15px;
 $btnfont:12px;
 
+
 $lightgreen: #B2D5BE;
 $darkgreen: #418660;
 $cream: #FFF9EE;
@@ -42,11 +43,13 @@ $cream: #FFF9EE;
 
 .top-bar {
     @include flex(space-between, row);
-    @include sideMargin(3vh, 0vh);
-    
+    border-left: 100px solid white;
+    border-right: 100px solid white;
+    background-color: white;
     position: -webkit-sticky;
-	  position: sticky;
-	  top: 0;
+	position: sticky;
+	top: 0;
+    margin: 25px 0 0 0;
 
 
       .icons {
@@ -111,7 +114,6 @@ $cream: #FFF9EE;
 
         .hero-text {
             @include sideMargin(1vh, 1vh);
-
             color: $darkgreen;
 
             button {
@@ -188,12 +190,12 @@ $cream: #FFF9EE;
 
 /*------------mums-section-----------------------*/
 
-h2 {
+.mamas-title {
     text-align: center;
-    @include sideMargin(1vh, 1vh );
+    @include sideMargin(2vh, 2vh );
     font-family: "HelveticaNeue-CondensedBold";
-font-size: 2px;
-
+    font-size: 20vw;
+    line-height: 30vh;
 }
 
 .mums-baking {
@@ -202,23 +204,23 @@ font-size: 2px;
 
     #shop-img {
         @include sideMargin(10px,10px );
-        height: 500px;
-        width: 1337px
+        height: auto;
+        width: 100%;
     }
 
     #shop-now {
         @include flex(space-between, row);
         align-self: start;
+        background-color: $darkgreen;
+                border: 1px solid $lightgreen;
+                color: white;
+                font-size: $btnfont;
     }
 
     .mums-info {
         @include flex(space-between, row);
-        gap: 50px;
-        width: 1337px;
-    }
-
-    .mums-text {
-        @include width(300px);
+        gap: 5vw;
+        width: 100%;
     }
 }
 
@@ -226,11 +228,28 @@ font-size: 2px;
 
 .scroll-section {
     @include flex(space-between, row);
-    @include sideMargin(10px,10px );
+    border-right: 100px solid $lightgreen;
+    border-left: 100px solid $lightgreen;
+    background-color: $lightgreen;
+    margin: 0 auto;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1rem;
+    padding: 1rem;
+    overflow-y: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    margin: 100px 0 100px 0;
+
+    .scroll-images {
+      width: 20vw;   
+      height: 35vh;
+      background-color: $darkgreen
+    }
 
     .scroll-text {
       @include flex(center, column);
-      @include sideMargin(10px,10px );
+      margin: 10px 0 10px 0;
       gap: 25px;
     }
 }
@@ -238,50 +257,101 @@ font-size: 2px;
 /*------------article----------------------------*/
 
 .double-img {
-    @include flex(space-evenly, row);
-    @include sideMargin(10px,10px );
-
+    @include flex(space-between, row);
+    @include sideMargin(5vw,5vw );
+    
     .double-image-inner {
       @include flex(space-evenly, column);
       align-items: flex-start;
+      width: 30vw;
+
+      .bla-img {
+        width: 30vw;
+        height: 30vw;
+        background-color: $darkgreen
+      }
     }  
 }
 
 .location {
     @include flex(space-between, row);
-    @include sideMargin(10px,10px );
+    @include sideMargin(50px,50px );
 
     .location-text {
-        @include flex(space-evenly, column);
+        @include flex(space-between, column);
         align-items: flex-start;
     }
+
+    .loc-img {
+        width: 30vw;
+        height: 30vw;
+        background-color: $darkgreen
+    }
+
 }
 
 .ng {
     @include flex(space-between, column);
     align-items: center;
+    @include sideMargin(50px,50px );
+
+    .ng-img {
+        height:150px;
+        width: 100%;
+        background-color: $darkgreen;
+        margin: 25px 0px 25px 0px;
+    }
+}
+
+.h3-bottom {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.h4-bottom {
+    font-size: 50px;
+    font-weight: bold;
 }
 
 /*------------mail-list---------------------------*/
 
-h6 {
+.h6-bottom {
     text-align: center;
+    font-size: 50px;
+    font-weight: bold;
 }
 
 .mail-info {
     @include flex(space-between, row);
     gap: 50px;
-    width: 1337px;
-    @include sideMargin(10px,10px );
+    @include sideMargin(50px,50px );
 
     .mail-text {
-    @include width(300px);
+    @include width(10vw);
     }
 }
 
 .email-form {
     text-align: center;
     @include sideMargin(10px,10px );
+    @include flex(center, row );
+    height: 5vh;
+    
+    #email-input {
+        background-color: white;
+                border: 1px solid black;
+                color: black;
+                font-size: 25px;
+                height:44px
+                
+    }
+
+    button {
+        background-color: white;
+                border: 1px solid black;
+                color: black;
+                font-size: 25px;
+    }
 }
 
 /*------------footer---------------------------*/
@@ -296,6 +366,10 @@ h6 {
     .footer-mid {
         @include flex(space-between, column);
         align-items: flex-start;
+        width: 25vw;
 
+        .foot-p {
+            font-weight: bold;
+        }
     }
 }
