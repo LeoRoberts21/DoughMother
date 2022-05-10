@@ -1,4 +1,10 @@
 /*mixins*/
+/*variables*/
+/*------------body----------------------------*/
+body {
+  background-color: #FFF9EE;
+}
+
 /*------------top-bar-------------------------*/
 .top-bar {
   display: -webkit-box;
@@ -16,10 +22,13 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-top: 0px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 25px;
   margin-bottom: 0px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 .top-bar .icons {
@@ -78,10 +87,10 @@
   width: 1px;
   background-color: #000000;
   height: 75px;
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .horiz-lines {
@@ -91,8 +100,8 @@
   width: auto;
   background-color: #000000;
   height: 1px;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -114,11 +123,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  height: 500px;
+  height: 610px;
+  background-color: #B2D5BE;
 }
 
 .hero .hero-left {
@@ -143,7 +149,19 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  max-height: 400px;
+  width: 50%;
+}
+
+.hero .hero-left .hero-text {
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #418660;
+}
+
+.hero .hero-left .hero-text button {
+  background-color: #418660;
 }
 
 .hero .hero-right {
@@ -165,7 +183,11 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-height: 400px;
+}
+
+.hero .hero-right #sunset-img {
+  height: 610px;
+  width: 50%;
 }
 
 /*------------moving-section-----------------*/
@@ -177,8 +199,8 @@
   background: #e8e8e8;
   color: black;
   border: 2px solid #ffffff;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -224,8 +246,8 @@
 /*------------mums-section-----------------------*/
 h2 {
   text-align: center;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -246,15 +268,15 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
 .mums-baking #shop-img {
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
   margin-top: 10px;
   margin-bottom: 10px;
   height: 500px;
@@ -323,8 +345,8 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -345,8 +367,8 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
   margin-top: 10px;
   margin-bottom: 10px;
   gap: 25px;
@@ -369,8 +391,8 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -412,8 +434,8 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -481,8 +503,8 @@ h6 {
           align-items: center;
   gap: 50px;
   width: 1337px;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -494,8 +516,8 @@ h6 {
 
 .email-form {
   text-align: center;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -518,7 +540,7 @@ h6 {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 50px;
-  padding: 50px 50px 50px 50px;
+  padding: 50px 100px 50px 100px;
   background-color: aquamarine;
   gap: 50px;
 }
