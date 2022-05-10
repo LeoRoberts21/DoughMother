@@ -1,10 +1,6 @@
 /*mixins*/
 /*variables*/
 /*------------body----------------------------*/
-body {
-  background-color: #FFF9EE;
-}
-
 /*------------top-bar-------------------------*/
 .top-bar {
   display: -webkit-box;
@@ -24,8 +20,8 @@ body {
           align-items: center;
   margin-left: 100px;
   margin-right: 100px;
-  margin-top: 25px;
-  margin-bottom: 0px;
+  margin-top: 3vh;
+  margin-bottom: 0vh;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -41,6 +37,7 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  width: 33vw;
 }
 
 .top-bar .icons2 {
@@ -53,10 +50,11 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  width: 33vw;
 }
 
 .top-bar .main-title {
-  width: 250px;
+  width: 20vw;
   height: auto;
 }
 
@@ -78,6 +76,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   list-style: none;
+  width: 100%;
 }
 
 .nav-bar .vert-lines {
@@ -89,8 +88,8 @@ body {
   height: 75px;
   margin-left: 100px;
   margin-right: 100px;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
 }
 
 .horiz-lines {
@@ -102,8 +101,8 @@ body {
   height: 1px;
   margin-left: 100px;
   margin-right: 100px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
 }
 
 /*------------hero---------------------------*/
@@ -123,7 +122,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 610px;
+  height: 73vh;
   background-color: #B2D5BE;
 }
 
@@ -149,19 +148,22 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  width: 50%;
+  width: 50vw;
 }
 
 .hero .hero-left .hero-text {
   margin-left: 100px;
   margin-right: 100px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
   color: #418660;
 }
 
 .hero .hero-left .hero-text button {
   background-color: #418660;
+  border: 1px solid #B2D5BE;
+  color: #B2D5BE;
+  font-size: 12px;
 }
 
 .hero .hero-right {
@@ -186,23 +188,34 @@ body {
 }
 
 .hero .hero-right #sunset-img {
-  height: 610px;
-  width: 50%;
+  height: 73vh;
+  width: 50vw;
 }
 
 /*------------moving-section-----------------*/
 .scroll-slow {
-  height: 50px;
+  height: 20vh;
   width: auto;
   overflow: hidden;
   position: relative;
-  background: #e8e8e8;
-  color: black;
-  border: 2px solid #ffffff;
-  margin-left: 100px;
-  margin-right: 100px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  background: #418660;
+  color: #B2D5BE;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  align-items: center;
 }
 
 .scroll-slow p {
@@ -210,8 +223,8 @@ body {
   width: 100%;
   height: 100%;
   margin: 0;
-  line-height: 50px;
-  text-align: center;
+  line-height: 20vh;
+  font-size: 5vw;
   /* Starting position */
   -webkit-transform: translateX(100%);
   transform: translateX(100%);
@@ -248,8 +261,10 @@ h2 {
   text-align: center;
   margin-left: 100px;
   margin-right: 100px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  font-family: "HelveticaNeue-CondensedBold";
+  font-size: 2px;
 }
 
 .mums-baking {
@@ -541,7 +556,7 @@ h6 {
           align-items: center;
   margin-top: 50px;
   padding: 50px 100px 50px 100px;
-  background-color: aquamarine;
+  background-color: #B2D5BE;
   gap: 50px;
 }
 
