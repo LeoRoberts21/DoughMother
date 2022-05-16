@@ -1,4 +1,7 @@
 
+
+@import "./phone";
+
 /*mixins*/
 
 @mixin flex($justify,$direction) {
@@ -42,7 +45,6 @@ html {
     @include flex(space-between, row);
     border-left: 100px solid $cream;
     border-right: 100px solid $cream;
-    border-color: $cream;
     background-color: $cream;
     position: -webkit-sticky;
 	position: sticky;
@@ -51,15 +53,13 @@ html {
     height: 60px;
     max-width: 100%;
 
-
-
     .icons {
       flex: 1;
       display: flex;
       justify-content: flex-start;
       height: 30px;
       gap: 20px;
-      width: 476px;
+      width: 50px;
     }
 
     .icons2 {
@@ -68,7 +68,7 @@ html {
         justify-content: flex-end;
         height: 30px;
         gap: 20px;
-        width: 476px;
+        width: 50px;
       }
 
     .main-title {
@@ -110,6 +110,8 @@ html {
     height: 1px;
     border-top: 50px solid $cream;
     border-bottom: 50px solid $cream;
+    border-left: 100px solid $cream;
+    border-right: 100px solid $cream;
     margin: 0px 0px 0px 0px;
 }
 
@@ -117,14 +119,13 @@ html {
 
 .hero {
     @include flex(center, row);
-    height: 73vh;
     background-color: $lightgreen;
 
     .hero-left {
         flex: 1;
         @include flex(space-between, column);
         align-items: flex-start;
-        width: 50vw;
+        width: 100%;
 
         .hero-text {
             @include sideMargin(1vh, 1vh);
@@ -135,6 +136,10 @@ html {
                 border: 1px solid $lightgreen;
                 color: $lightgreen;
                 font-size: $btnfont;
+                height: 5vh;
+                width: 10vw;
+                margin-top: 10px;
+                border-radius: 5px;
             }
         }
     }
@@ -143,8 +148,8 @@ html {
         @include flex(center, row);
 
         #sunset-img {
-            height: 73vh;
-            width: 50vw;
+            height: auto;
+            width: 100%;
         }
     }
 }
@@ -201,21 +206,18 @@ html {
     }
    }
 
-
 /*------------mums-section-----------------------*/
 
 .mums-section {
     border-left: 100px solid $cream;
     border-right: 100px solid $cream;
     background-color: $cream;
-    border-bottom: 50px solid $cream;
 }
 
 .mamas-title {
     text-align: center;
     font-family: "HelveticaNeue-CondensedBold";
-    font-size: 20vw;
-    line-height: 30vh;
+    font-size: 186px;
     padding-top: 50px;
 }
 
@@ -225,22 +227,41 @@ html {
     #shop-img {
         height: auto;
         width: 100%;
+        border-radius: 15px;
     }
 
     #shop-now {
-        @include flex(space-between, row);
+        @include flex(center, row);
         align-self: start;
         background-color: $darkgreen;
                 border: 1px solid $lightgreen;
                 color: white;
                 font-size: $btnfont;
+                height: 5vh;
+                width: 10vw;
+                margin-top: 10px;
+                border-radius: 5px;
     }
 
     .mums-info {
         @include flex(space-between, row);
         gap: 5vw;
         width: 100%;
+        border-bottom: 50px solid $cream;
+        border-top: 50px solid $cream;
+        margin: 0;
+        padding: 0;
     }
+
+    .croissont {
+        height: 5vh;
+        width: auto;
+    }
+}
+
+.croissont {
+    height: 5vh;
+    width: auto;
 }
 
 /*------------scroll-section----------------------*/
@@ -263,13 +284,14 @@ html {
     .scroll-images {
       width: 20vw;   
       height: 35vh;
-      background-color: $darkgreen
+      border-radius: 15px;
     }
 
     .scroll-text {
       @include flex(center, column);
       padding: 10px 0 10px 0;
       gap: 25px;
+      color: $darkgreen;
     }
 }
 
@@ -280,7 +302,7 @@ html {
     background-color: $cream;
     border-left: 100px solid $cream;
     border-right: 100px solid $cream;
-    padding:50px;
+    padding:50px 0px 0px 0px;
     
     .double-image-inner {
       @include flex(space-evenly, column);
@@ -290,7 +312,7 @@ html {
       .bla-img {
         width: 30vw;
         height: 30vw;
-        background-color: $darkgreen
+        border-radius: 15px
       }
     }  
 }
@@ -300,17 +322,19 @@ html {
     border-left: 100px solid $cream;
     border-right: 100px solid $cream;
     background-color: $cream;
+    gap: 50px;
 
     .location-text {
         @include flex(space-between, column);
         align-items: flex-start;
-        background-color: $cream;      
+        background-color: $cream;   
+        width: 50vw;   
     }
 
     .loc-img {
-        width: 30vw;
+        width: 50vw;
         height: 30vw;
-        background-color: $darkgreen
+        border-radius: 15px;
     }
 
 }
@@ -325,7 +349,6 @@ html {
     .ng-img {
         height:150px;
         width: 100%;
-        background-color: $darkgreen;
         margin: 25px 0px 25px 0px;
     }
 }
@@ -340,41 +363,58 @@ html {
     font-weight: bold;
 }
 
+.squiggle {
+    border-left: 100px solid $cream;
+    border-right: 100px solid $cream;
+    width: 100%;
+    border-bottom: 50px solid $cream;
+    border-top: 50px solid $cream;
+}
+
 /*------------mail-list---------------------------*/
 
 .h6-bottom {
     text-align: center;
     font-size: 50px;
     font-weight: bold;
+    background-color: $cream;
+    margin: 0px;
+    border-top: 50px solid $cream;
 }
 
 .mail-info {
     @include flex(space-between, row);
     gap: 50px;
-    @include sideMargin(50px,50px );
+    background-color: $cream;
+    border-left: 100px solid $cream;
+    border-right: 100px solid $cream;
+    padding: 50px 0px 50px 0px;
 
     .mail-text {
-    @include width(10vw);
+    width: 10vw;
     }
 }
 
 .email-form {
     text-align: center;
-    @include sideMargin(10px,10px );
+    border-left: 100px solid $cream;
+    border-right: 100px solid $cream;
+    border-bottom: 100px solid $cream;
     @include flex(center, row );
-    height: 5vh;
+    height: 3vh;
+    background-color: $cream;
     
     #email-input {
-        background-color: white;
+        background-color: $cream;
                 border: 1px solid black;
                 color: black;
                 font-size: 25px;
-                height:44px
+                height:44px;
                 
     }
 
     button {
-        background-color: white;
+        background-color: $cream;
                 border: 1px solid black;
                 color: black;
                 font-size: 25px;
@@ -385,7 +425,7 @@ html {
 
 .footer-section {
     @include flex(space-between, row);
-    margin-top: 50px;
+    border-top: 50px solid $cream;
     padding: 50px 100px 50px 100px;
     background-color: $lightgreen;
     gap: 50px;
@@ -394,9 +434,266 @@ html {
         @include flex(space-between, column);
         align-items: flex-start;
         width: 25vw;
+        color: $darkgreen;
 
         .foot-p {
             font-weight: bold;
         }
     }
+}
+
+/*------------Iphone(600px)---------------------*/
+
+
+@media only screen and (max-width: 767px) {
+
+    /*--[ Mobile styles go here]---------------------------*/
+
+    .top-bar {
+        @include flex(space-between, row);
+        border-left: 25px solid $cream;
+        border-right: 25px solid $cream;
+        margin: 25px 0 0 0;
+        height: 60px;
+        width: 100%;
+    
+        .icons {
+        display: none;
+        }
+    
+        .icons2 {
+            height: 20px;
+            width: 50px;
+          }
+    
+        .main-title {
+            width: 50vw;
+        }  
+    }
+
+    /*------------nav-bar-------------------------*/
+
+    .nav-bar {
+      display: none;
+       
+         .vert-lines {
+           display: none;
+       }
+    }
+
+        /*------------hero-------------------------*/
+    
+    .hero {
+        @include flex(center, column);
+    
+        .hero-left {
+            width: 100%;
+    
+            .hero-text {
+                border-left: 25px solid $lightgreen;
+                border-right: 25px solid $lightgreen;
+                border-top: 25px solid $lightgreen;
+                border-bottom: 25px solid $lightgreen;
+                margin: 0px 0px 0px 0px;
+    
+                button {
+                    width: 100%;
+                }
+            }
+        }
+    
+        #sunset-img {
+            width: 100%
+       }
+    }
+
+
+ /*------------moving-section-----------------*/
+
+ .scroll-slow {
+    height: 10vh;	
+   }
+   .scroll-slow p {
+    position:absolute;
+    line-height: 10vh;
+   }
+
+ /*------------mums-section-----------------------*/
+
+ .mums-section {
+    border-left: 25px solid $cream;
+    border-right: 25px solid $cream;
+ }
+
+ .mamas-title {
+    font-size: 150px;
+    padding-top: 25px;
+    line-height: 140px;
+ }
+
+ .mums-baking {
+
+    #shop-now {
+        height: 5vh;
+        width: 100%;
+    }
+
+    .mums-info {
+        @include flex(space-between, column);
+        gap: 5vw;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .croissont {
+        height: 5vh;
+        width: auto;
+    }
+  }
+
+  /*------------scroll-section----------------------*/
+
+  .scroll-section {
+      border-right: 25px solid $lightgreen;
+      border-left: 25px solid $lightgreen;
+  
+      .scroll-images {
+        width: 40vw;   
+        height: auto;
+      }
+  
+      .scroll-text {
+
+        p {
+            display: none;
+        }
+
+      }
+    }
+  
+/*------------article----------------------------*/
+
+.double-img {
+    @include flex(space-between, column);
+    border-left: 25px solid $cream;
+    border-right: 25px solid $cream;
+    padding: 10px 0px 0px 0px;
+    gap: 50px;
+    
+    .double-image-inner {
+      width: 100%;
+      border-top: 25px solid $cream;
+
+      .bla-img {
+        width: 100%;
+        height: auto;
+        padding-top: 10px;
+      }
+    }  
+}
+
+.location {
+    @include flex(space-between, column);
+    border-left: 25px solid $cream;
+    border-right: 25px solid $cream;
+    gap: 10px;
+
+    .location-text {
+        @include flex(space-between, column);
+        align-items: flex-start;
+        width: 100%;   
+    }
+
+    .loc-img {
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+.ng {
+    @include flex(space-between, column);
+    align-items: center;
+    border-left: 25px solid $cream;
+    border-right: 25px solid $cream;
+
+    .ng-img {
+        height:auto;
+        width: 100%;
+        padding: 25px 0px 25px 0px;
+    }
+}
+
+.h3-bottom {
+    font-size: 68px;
+    font-weight: bold;
+}
+
+.h4-bottom {
+    font-size: 68px;
+    font-weight: bold;
+}
+
+.squiggle {
+    border-left: 25px solid $cream;
+    border-right: 25px solid $cream;
+    width: 100%;
+}
+
+/*------------mail-list---------------------------*/
+
+.h6-bottom {
+    text-align: center;
+    font-size: 68px;
+    border-top: 25px solid $cream;
+}
+
+.mail-info {
+    @include flex(space-between, column);
+    gap: 5px;
+    border-left: 25px solid $cream;
+    border-right: 25px solid $cream;
+    padding: 25px 0px 50px 0px;
+
+    .mail-text {
+    width: 100%;
+    }
+}
+
+.email-form {
+    text-align: center;
+    border-left: 25px solid $cream;
+    border-right: 25px solid $cream;
+    border-bottom: 75px solid $cream;
+    
+    #email-input {
+                width: 100%;
+                
+    }
+}
+
+/*------------footer---------------------------*/
+
+.footer-section {
+    @include flex(space-between, column);
+    padding: 25px 25px 25px 25px;
+    gap: 10px;
+
+    .footer-mid {
+        @include flex(space-between, column);
+        align-items: flex-start;
+        width: 100%;
+        color: $darkgreen;
+
+        .foot-p {
+            font-weight: bold;
+        }
+    }
+
+    .mid-logo {
+        width: 50%;
+    }
+}
+
 }
