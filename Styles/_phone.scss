@@ -1,5 +1,35 @@
 @media only screen and (max-width: 767px) {
 
+/*mixins*/
+
+@mixin flex($justify,$direction) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content:$justify;
+    align-self: center;
+    align-items: center;
+}
+@mixin sideMargin($top, $bottom) {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: $top;
+    margin-bottom: $bottom;
+}
+@mixin width($width) {
+    width: $width;
+    height: auto;
+}
+
+/*variables*/
+
+$bodyfont: 15px;
+$btnfont:12px;
+
+
+$lightgreen: #B2D5BE;
+$darkgreen: #418660;
+$cream: #FFF9EE;
+
     /*--[ Mobile styles go here]---------------------------*/
 
     .top-bar {
@@ -38,6 +68,10 @@
     
     .hero {
         @include flex(center, column);
+
+        #sun {
+            width: 100%;
+        }
     
         .hero-left {
             width: 100%;
@@ -56,7 +90,7 @@
         }
     
         #sunset-img {
-            width: 100%
+            display: none;
        }
     }
 

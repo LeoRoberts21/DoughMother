@@ -1,6 +1,7 @@
 
 
 @import "phone";
+@import "shop";
 
 /*mixins*/
 
@@ -117,10 +118,15 @@ html {
 
 /*------------hero---------------------------*/
 
+
 .hero {
     @include flex(center, row);
     background-color: $lightgreen;
 
+#sun {
+    display: none;
+}
+    
     .hero-left {
         flex: 1;
         @include flex(space-between, column);
@@ -441,3 +447,417 @@ html {
         }
     }
 }
+
+
+@media only screen and (max-width: 767px) {
+
+    /*mixins*/
+    
+    @mixin flex($justify,$direction) {
+        display: flex;
+        flex-direction: $direction;
+        justify-content:$justify;
+        align-self: center;
+        align-items: center;
+    }
+    @mixin sideMargin($top, $bottom) {
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-top: $top;
+        margin-bottom: $bottom;
+    }
+    @mixin width($width) {
+        width: $width;
+        height: auto;
+    }
+    
+    /*variables*/
+    
+    $bodyfont: 15px;
+    $btnfont:12px;
+    
+    
+    $lightgreen: #B2D5BE;
+    $darkgreen: #418660;
+    $cream: #FFF9EE;
+    
+        /*--[ Mobile styles go here]---------------------------*/
+    
+        .top-bar {
+            @include flex(space-between, row);
+            border-left: 25px solid $cream;
+            border-right: 25px solid $cream;
+            margin: 25px 0 0 0;
+            height: 60px;
+            width: 100%;
+        
+            .icons {
+            display: none;
+            }
+        
+            .icons2 {
+                height: 20px;
+                width: 50px;
+              }
+        
+            .main-title {
+                width: 50vw;
+            }  
+        }
+    
+        /*------------nav-bar-------------------------*/
+    
+        .nav-bar {
+          display: none;
+           
+             .vert-lines {
+               display: none;
+           }
+        }
+    
+            /*------------hero-------------------------*/
+        
+        .hero {
+            @include flex(center, column);
+    
+            #sun {
+                width: 100%;
+                display: flex;
+            }
+        
+            .hero-left {
+                width: 100%;
+        
+                .hero-text {
+                    border-left: 25px solid $lightgreen;
+                    border-right: 25px solid $lightgreen;
+                    border-top: 25px solid $lightgreen;
+                    border-bottom: 25px solid $lightgreen;
+                    margin: 0px 0px 0px 0px;
+        
+                    button {
+                        width: 100%;
+                        margin-bottom: 25px;
+                    }
+                }
+            }
+        
+            #sunset-img {
+                display: none;
+           }
+        }
+    
+    
+     /*------------moving-section-----------------*/
+    
+     .scroll-slow {
+        height: 10vh;	
+       }
+       .scroll-slow p {
+        position:absolute;
+        line-height: 10vh;
+       }
+    
+     /*------------mums-section-----------------------*/
+    
+     .mums-section {
+        border-left: 25px solid $cream;
+        border-right: 25px solid $cream;
+     }
+    
+     .mamas-title {
+        font-size: 150px;
+        padding-top: 25px;
+        line-height: 140px;
+     }
+    
+     .mums-baking {
+    
+        #shop-now {
+            height: 5vh;
+            width: 100%;
+        }
+    
+        .mums-info {
+            @include flex(space-between, column);
+            gap: 5vw;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    
+        .croissont {
+            height: 5vh;
+            width: auto;
+        }
+      }
+    
+      /*------------scroll-section----------------------*/
+    
+      .scroll-section {
+          border-right: 25px solid $lightgreen;
+          border-left: 25px solid $lightgreen;
+      
+          .scroll-images {
+            width: 40vw;   
+            height: auto;
+          }
+      
+          .scroll-text {
+    
+            p {
+                display: none;
+            }
+    
+          }
+        }
+      
+    /*------------article----------------------------*/
+    
+    .double-img {
+        @include flex(space-between, column);
+        border-left: 25px solid $cream;
+        border-right: 25px solid $cream;
+        padding: 10px 0px 0px 0px;
+        gap: 50px;
+        
+        .double-image-inner {
+          width: 100%;
+          border-top: 25px solid $cream;
+    
+          .bla-img {
+            width: 100%;
+            height: auto;
+            padding-top: 10px;
+          }
+        }  
+    }
+    
+    .location {
+        @include flex(space-between, column);
+        border-left: 25px solid $cream;
+        border-right: 25px solid $cream;
+        gap: 10px;
+    
+        .location-text {
+            @include flex(space-between, column);
+            align-items: flex-start;
+            width: 100%;   
+        }
+    
+        .loc-img {
+            width: 100%;
+            height: auto;
+        }
+    
+    }
+    
+    .ng {
+        @include flex(space-between, column);
+        align-items: center;
+        border-left: 25px solid $cream;
+        border-right: 25px solid $cream;
+    
+        .ng-img {
+            height:auto;
+            width: 100%;
+            padding: 25px 0px 25px 0px;
+        }
+    }
+    
+    .h3-bottom {
+        font-size: 68px;
+        font-weight: bold;
+    }
+    
+    .h4-bottom {
+        font-size: 68px;
+        font-weight: bold;
+    }
+    
+    .squiggle {
+        border-left: 25px solid $cream;
+        border-right: 25px solid $cream;
+        width: 100%;
+    }
+    
+    /*------------mail-list---------------------------*/
+    
+    .h6-bottom {
+        text-align: center;
+        font-size: 68px;
+        border-top: 25px solid $cream;
+    }
+    
+    .mail-info {
+        @include flex(space-between, column);
+        gap: 5px;
+        border-left: 25px solid $cream;
+        border-right: 25px solid $cream;
+        padding: 25px 0px 50px 0px;
+    
+        .mail-text {
+        width: 100%;
+        }
+    }
+    
+    .email-form {
+        text-align: center;
+        border-left: 25px solid $cream;
+        border-right: 25px solid $cream;
+        border-bottom: 75px solid $cream;
+        
+        #email-input {
+                    width: 100%;
+                    
+        }
+    }
+    
+    /*------------footer---------------------------*/
+    
+    .footer-section {
+        @include flex(space-between, column);
+        padding: 25px 25px 25px 25px;
+        gap: 10px;
+    
+        .footer-mid {
+            @include flex(space-between, column);
+            align-items: flex-start;
+            width: 100%;
+            color: $darkgreen;
+    
+            .foot-p {
+                font-weight: bold;
+            }
+        }
+    
+        .mid-logo {
+            width: 50%;
+        }
+    }
+    
+    }
+
+
+    /*------------SHOP--------------------------------------------------------------------------------------------------------------------------*/
+
+.cakes {
+    border-bottom: 50px solid $cream;
+}
+
+    .shop-flex {
+        @include flex(space-evenly, row);
+        background-color: $cream;
+    }
+
+    /*------------right---------------------------*/
+
+    .scroll-section-shop {
+        @include flex(space-between, row);
+        border-right: 100px solid $cream;
+        border-left: 100px solid $cream;
+        background-color: $cream;
+        margin: 0 auto;
+        display: grid;
+        grid-auto-flow: column;
+        gap: 1rem;
+        padding: 1rem;
+        overflow-y: auto;
+        overscroll-behavior-x: contain;
+        scroll-snap-type: x mandatory;
+    
+        .scroll-images-shop {
+          width: 150px;   
+          height: auto;
+          border-radius: 15px;
+        }
+    
+        .scroll-text-shop {
+          @include flex(center, column);
+          gap: 25px;
+          color: $darkgreen;
+        }
+    }
+
+  /*------------left---------------------------*/
+
+
+  .scroll-section-shop-2 {
+    @include flex(space-between, row);
+align-items: flex-start;
+    border-left: 100px solid $cream;
+    background-color: $cream;
+    margin: 0 auto;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1rem;
+    padding: 1rem;
+    overflow-y: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    height: 270px;
+
+    .scroll-images-shop-2 {
+      width: 150px;   
+      height: auto;
+      border-radius: 15px;
+    }
+
+    .scroll-text-shop-2 {
+      @include flex(center, column);
+      gap: 25px;
+      color: $darkgreen;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .shop-line-vert {
+    border: 5px;
+    clear:both;
+    display:block;
+    width :3px;           
+    background-color:#000000;
+    height: 1176px;
+  }
+
+  .shop-line-horiz-1 {
+    border: 0px;
+    clear:both;
+    display:block;
+    width:auto;           
+    background-color:#000000;
+    height: 3px;
+    border-left: 100px solid $cream;
+  }
+
+  .shop-line-horiz-2 {
+    border: 0px;
+    clear:both;
+    display:block;
+    width:auto;           
+    background-color:#000000;
+    height: 3px;
+    border-right: 100px solid $cream;
+  }
+
