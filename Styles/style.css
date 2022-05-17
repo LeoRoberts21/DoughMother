@@ -530,15 +530,22 @@ html {
   color: #418660;
 }
 
-.hero .hero-left .hero-text button {
+.hero .hero-left .hero-text .button1 {
   background-color: #418660;
-  border: 1px solid #B2D5BE;
+  border: 1px solid #418660;
   color: #B2D5BE;
-  font-size: 12px;
+  font-size: 13px;
   height: 5vh;
   width: 10vw;
   margin-top: 10px;
   border-radius: 5px;
+}
+
+.hero .hero-left .hero-text .button1:hover {
+  background-color: #B2D5BE;
+  border: 2px solid #418660;
+  color: #418660;
+  font-size: 13px;
 }
 
 .hero .hero-right {
@@ -653,9 +660,9 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -ms-flex-item-align: center;
       align-self: center;
   -webkit-box-align: center;
@@ -667,34 +674,6 @@ html {
   height: auto;
   width: 100%;
   border-radius: 15px;
-}
-
-.mums-baking #shop-now {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-item-align: center;
-      align-self: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-item-align: start;
-      align-self: start;
-  background-color: #418660;
-  border: 1px solid #418660;
-  color: white;
-  font-size: 12px;
-  height: 5vh;
-  width: 10vw;
-  margin-top: 10px;
-  border-radius: 5px;
 }
 
 .mums-baking .mums-info {
@@ -1140,9 +1119,13 @@ html {
     border-bottom: 25px solid #B2D5BE;
     margin: 0px 0px 0px 0px;
   }
-  .hero .hero-left .hero-text button {
+  .hero .hero-left .hero-text .button1 {
     width: 100%;
     margin-bottom: 25px;
+  }
+  .hero .hero-left .hero-text .button1:hover {
+    height: 5vh;
+    width: 100%;
   }
   .hero #sunset-img {
     display: none;
@@ -1165,7 +1148,11 @@ html {
     padding-top: 25px;
     line-height: 140px;
   }
-  .mums-baking #shop-now {
+  .button2 {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .button2:hover {
     height: 5vh;
     width: 100%;
   }

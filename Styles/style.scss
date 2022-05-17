@@ -26,7 +26,7 @@
 /*variables*/
 
 $bodyfont: 15px;
-$btnfont:12px;
+$btnfont:13px;
 
 
 $lightgreen: #B2D5BE;
@@ -137,15 +137,21 @@ html {
             @include sideMargin(1vh, 1vh);
             color: $darkgreen;
 
-            button {
+            .button1 {
                 background-color: $darkgreen;
-                border: 1px solid $lightgreen;
+                border: 1px solid $darkgreen;
                 color: $lightgreen;
                 font-size: $btnfont;
                 height: 5vh;
                 width: 10vw;
                 margin-top: 10px;
                 border-radius: 5px;
+            }
+            .button1:hover {
+                background-color: $lightgreen;
+                border: 2px solid $darkgreen;
+                color: $darkgreen;
+                font-size: $btnfont;
             }
         }
     }
@@ -228,25 +234,12 @@ html {
 }
 
 .mums-baking {
-    @include flex(center, column);
+    @include flex(flex-start, column);
 
     #shop-img {
         height: auto;
         width: 100%;
         border-radius: 15px;
-    }
-
-    #shop-now {
-        @include flex(center, row);
-        align-self: start;
-        background-color: $darkgreen;
-                border: 1px solid $darkgreen;
-                color: white;
-                font-size: $btnfont;
-                height: 5vh;
-                width: 10vw;
-                margin-top: 10px;
-                border-radius: 5px;
     }
 
     .mums-info {
@@ -523,10 +516,16 @@ html {
                     border-bottom: 25px solid $lightgreen;
                     margin: 0px 0px 0px 0px;
         
-                    button {
+                    .button1 {
                         width: 100%;
                         margin-bottom: 25px;
                     }
+
+                    .button1:hover {
+                        height: 5vh;
+                        width: 100%
+                    }
+
                 }
             }
         
@@ -558,14 +557,20 @@ html {
         padding-top: 25px;
         line-height: 140px;
      }
+
+     .button2 {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .button2:hover {
+        height: 5vh;
+        width: 100%
+    }
     
      .mums-baking {
     
-        #shop-now {
-            height: 5vh;
-            width: 100%;
-        }
-    
+
         .mums-info {
             @include flex(space-between, column);
             gap: 5vw;
