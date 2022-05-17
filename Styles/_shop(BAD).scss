@@ -1,0 +1,172 @@
+
+    /*mixins*/
+
+@mixin flex($justify,$direction) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content:$justify;
+    align-self: center;
+    align-items: center;
+}
+@mixin sideMargin($top, $bottom) {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: $top;
+    margin-bottom: $bottom;
+}
+@mixin width($width) {
+    width: $width;
+    height: auto;
+}
+
+/*variables*/
+
+$bodyfont: 15px;
+$btnfont:12px;
+
+
+$lightgreen: #B2D5BE;
+$darkgreen: #418660;
+$cream: #FFF9EE;
+
+
+
+/*------------body----------------------------*/
+
+html {
+    background-color: $cream;
+}
+
+/*------------top-bar-------------------------*/
+
+.top-bar {
+    @include flex(space-between, row);
+    border-left: 100px solid $cream;
+    border-right: 100px solid $cream;
+    background-color: $cream;
+    position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+    margin: 25px 0 0 0;
+    height: 60px;
+    max-width: 100%;
+
+    .icons {
+      flex: 1;
+      display: flex;
+      justify-content: flex-start;
+      height: 30px;
+      gap: 20px;
+      width: 50px;
+    }
+
+    .icons2 {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        height: 30px;
+        gap: 20px;
+        width: 50px;
+      }
+
+    .main-title {
+        flex: 1;
+        width: 20vw;
+        height: auto;
+        display: flex;
+        align-self: center;
+    }  
+}
+
+
+/*------------shop-------------------------------------------------------------*/
+    
+    #cakes {
+width: 100%;
+border-top: 50px solid $cream;
+border-bottom: 50px solid $cream;
+height: auto;
+    }
+    
+        .shop-flex {
+            @include flex(space-evenly, row);
+            background-color: $cream;
+        }
+    
+        /*------------menu-section-left---------------------------*/
+    
+    .whole-shop {
+        background-color: $cream;
+    }
+    
+    
+    .shop-left {
+        border-left: 100px solid $cream;
+        background-color: $cream;
+        width: 360px;
+        font-size: $bodyfont;
+    }
+    
+    
+    .shop-row {
+        @include flex(space-evenly, row);
+    }
+    
+      /*------------menu-section-right---------------------------*/
+
+        .shop-scroll {
+            @include flex(space-evenly, row);
+            border-right: 100px solid $cream;
+            border-left: 100px solid $cream;
+            background-color: $cream;
+            margin: 0 auto;
+            display: grid;
+            grid-auto-flow: column;
+            gap: 100px;
+            padding: 1rem;
+            overflow-y: auto;
+            overscroll-behavior-x: contain;
+            scroll-snap-type: x mandatory;
+            padding: 50px 0px 50px 0px;
+    
+            .shop-pics {
+                width: 10vw;   
+                height: auto;
+                border-radius: 50px;
+                border-bottom: 10px;
+            } 
+    
+            .shop-txt {
+                width: 10vw;   
+                height: auto;
+                font-size: 12px;
+                text-align: center;
+                border-top: 10px solid $cream;
+
+                .price {
+                    @include flex(space-evenly, row);
+                    border-top: 10px solid $cream;
+                }
+
+                .shop-button {
+                    @include flex(center, row);
+                    align-self: center;
+                    background-color: $darkgreen;
+                            border: 1px solid $darkgreen;
+                            color: white;
+                            font-size: $btnfont;
+                            height: 3vh;
+                            width: 3vw;
+                            border-radius: 5px;
+                }
+            }
+        }
+    
+        .shop-squiggle {
+            border-left: 100px solid $cream;
+            border-right: 100px solid $cream;
+            width: 100%;
+        }
+
+
+/*# sourceMappingURL=Home.cshtml.css.map */
