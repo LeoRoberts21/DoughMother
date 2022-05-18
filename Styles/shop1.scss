@@ -99,7 +99,6 @@
             background-color: $cream;
         }
         
-        
         .shop-left {
             border-left: 100px solid $cream;
             background-color: $cream;
@@ -159,6 +158,12 @@
                                 width: 3vw;
                                 border-radius: 5px;
                     }
+
+                    .shop-button:hover {
+                        background-color: $cream;
+                                border: 2px solid $darkgreen;
+                                color: $darkgreen;
+                    }
                 }
             }
         
@@ -180,6 +185,7 @@
     .footer-mid {
         @include flex(space-between, column);
         align-items: flex-start;
+        align-self: flex-start;
         width: 25vw;
         color: $darkgreen;
 
@@ -189,7 +195,8 @@
     }
 }
 
-/*------------PHONE--------------------------------------------------------------*/
+
+/*------------PHONE--------------------------------------------------------------------------------------------*/
 
 @media only screen and (max-width: 767px) {
 

@@ -226,6 +226,12 @@ html {
   border-radius: 5px;
 }
 
+.shop-scroll .shop-txt .shop-button:hover {
+  background-color: #FFF9EE;
+  border: 2px solid #418660;
+  color: #418660;
+}
+
 .shop-squiggle {
   border-left: 100px solid #FFF9EE;
   border-right: 100px solid #FFF9EE;
@@ -274,6 +280,8 @@ html {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   width: 25vw;
   color: #418660;
 }
@@ -282,7 +290,7 @@ html {
   font-weight: bold;
 }
 
-/*------------PHONE--------------------------------------------------------------*/
+/*------------PHONE--------------------------------------------------------------------------------------------*/
 @media only screen and (max-width: 767px) {
   .top-bar {
     display: -webkit-box;

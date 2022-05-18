@@ -1,349 +1,3 @@
-@media only screen and (max-width: 767px) {
-  /*mixins*/
-  /*variables*/
-  /*--[ Mobile styles go here]-------------------------------------------------------------------------*/
-  .top-bar {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-item-align: center;
-        align-self: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    border-left: 25px solid #FFF9EE;
-    border-right: 25px solid #FFF9EE;
-    margin: 25px 0 0 0;
-    height: 60px;
-    width: 100%;
-  }
-  .top-bar .icons {
-    display: none;
-  }
-  .top-bar .icons2 {
-    height: 20px;
-    width: 50px;
-  }
-  .top-bar .main-title {
-    width: 50vw;
-  }
-  /*------------nav-bar-------------------------*/
-  .nav-bar {
-    display: none;
-  }
-  .nav-bar .vert-lines {
-    display: none;
-  }
-  /*------------hero-------------------------*/
-  .hero {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-item-align: center;
-        align-self: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .hero #sun {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .hero .hero-left {
-    width: 100%;
-  }
-  .hero .hero-left .hero-text {
-    border-left: 25px solid #B2D5BE;
-    border-right: 25px solid #B2D5BE;
-    border-top: 25px solid #B2D5BE;
-    border-bottom: 25px solid #B2D5BE;
-    margin: 0px 0px 0px 0px;
-  }
-  .hero .hero-left .hero-text button {
-    width: 100%;
-    margin-bottom: 25px;
-  }
-  .hero #sunset-img {
-    display: none;
-  }
-  /*------------moving-section-----------------*/
-  .scroll-slow {
-    height: 10vh;
-  }
-  .scroll-slow p {
-    position: absolute;
-    line-height: 10vh;
-  }
-  /*------------mums-section-----------------------*/
-  .mums-section {
-    border-left: 25px solid #FFF9EE;
-    border-right: 25px solid #FFF9EE;
-  }
-  .mamas-title {
-    font-size: 150px;
-    padding-top: 25px;
-    line-height: 140px;
-  }
-  .mums-baking #shop-now {
-    height: 5vh;
-    width: 100%;
-  }
-  .mums-baking .mums-info {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-item-align: center;
-        align-self: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    gap: 5vw;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  .mums-baking .croissont {
-    height: 5vh;
-    width: auto;
-  }
-  /*------------scroll-section----------------------*/
-  .scroll-section {
-    border-right: 25px solid #B2D5BE;
-    border-left: 25px solid #B2D5BE;
-  }
-  .scroll-section .scroll-images {
-    width: 40vw;
-    height: auto;
-  }
-  .scroll-section .scroll-text p {
-    display: none;
-  }
-  /*------------article----------------------------*/
-  .double-img {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-item-align: center;
-        align-self: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    border-left: 25px solid #FFF9EE;
-    border-right: 25px solid #FFF9EE;
-    padding: 10px 0px 0px 0px;
-    gap: 50px;
-  }
-  .double-img .double-image-inner {
-    width: 100%;
-    border-top: 25px solid #FFF9EE;
-  }
-  .double-img .double-image-inner .bla-img {
-    width: 100%;
-    height: auto;
-    padding-top: 10px;
-  }
-  .location {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-item-align: center;
-        align-self: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    border-left: 25px solid #FFF9EE;
-    border-right: 25px solid #FFF9EE;
-    gap: 10px;
-  }
-  .location .location-text {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-item-align: center;
-        align-self: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    width: 100%;
-  }
-  .location .loc-img {
-    width: 100%;
-    height: auto;
-  }
-  .ng {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-item-align: center;
-        align-self: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    align-items: center;
-    border-left: 25px solid #FFF9EE;
-    border-right: 25px solid #FFF9EE;
-  }
-  .ng .ng-img {
-    height: auto;
-    width: 100%;
-    padding: 25px 0px 25px 0px;
-  }
-  .h3-bottom {
-    font-size: 68px;
-    font-weight: bold;
-  }
-  .h4-bottom {
-    font-size: 68px;
-    font-weight: bold;
-  }
-  .squiggle {
-    border-left: 25px solid #FFF9EE;
-    border-right: 25px solid #FFF9EE;
-    width: 100%;
-  }
-  /*------------mail-list---------------------------*/
-  .h6-bottom {
-    text-align: center;
-    font-size: 68px;
-    border-top: 25px solid #FFF9EE;
-  }
-  .mail-info {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-item-align: center;
-        align-self: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    gap: 5px;
-    border-left: 25px solid #FFF9EE;
-    border-right: 25px solid #FFF9EE;
-    padding: 25px 0px 50px 0px;
-  }
-  .mail-info .mail-text {
-    width: 100%;
-  }
-  .email-form {
-    text-align: center;
-    border-left: 25px solid #FFF9EE;
-    border-right: 25px solid #FFF9EE;
-    border-bottom: 75px solid #FFF9EE;
-  }
-  .email-form #email-input {
-    width: 100%;
-  }
-  /*------------footer---------------------------*/
-  .footer-section {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-item-align: center;
-        align-self: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 25px 25px 25px 25px;
-    gap: 10px;
-  }
-  .footer-section .footer-mid {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-item-align: center;
-        align-self: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    width: 100%;
-    color: #418660;
-  }
-  .footer-section .footer-mid .foot-p {
-    font-weight: bold;
-  }
-  .footer-section .mid-logo {
-    width: 50%;
-  }
-}
-
 /*mixins*/
 /*variables*/
 /*------------body----------------------------*/
@@ -491,6 +145,7 @@ html {
       -ms-flex-align: center;
           align-items: center;
   background-color: #B2D5BE;
+  height: 601px;
 }
 
 .hero #sun {
@@ -528,6 +183,32 @@ html {
   margin-top: 1vh;
   margin-bottom: 1vh;
   color: #418660;
+}
+
+.hero .hero-left .hero-text .welcome {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "HelveticaNeue-CondensedBold";
+}
+
+.hero .hero-left .hero-text .welcome .welcome-text {
+  font-size: 90px;
+}
+
+.hero .hero-left .hero-text .welcome .croissont2 {
+  height: 8vh;
+  width: auto;
+}
+
+.hero .hero-left .hero-text .welcome .welcome-under {
+  font-size: 18px;
 }
 
 .hero .hero-left .hero-text .button1 {
@@ -570,7 +251,7 @@ html {
 }
 
 .hero .hero-right #sunset-img {
-  height: auto;
+  height: 601px;
   width: 100%;
 }
 
@@ -676,6 +357,24 @@ html {
   border-radius: 15px;
 }
 
+.mums-baking .button2 {
+  background-color: #418660;
+  border: 1px solid #418660;
+  color: #FFF9EE;
+  font-size: 13px;
+  height: 5vh;
+  width: 10vw;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.mums-baking .button2:hover {
+  background-color: #FFF9EE;
+  border: 2px solid #418660;
+  color: #418660;
+  font-size: 13px;
+}
+
 .mums-baking .mums-info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -700,8 +399,12 @@ html {
   padding: 0;
 }
 
-.mums-baking .croissont {
-  height: 5vh;
+.mums-baking .mums-text {
+  width: 70vw;
+}
+
+.mums-baking .pie {
+  height: 9vh;
   width: auto;
 }
 
@@ -936,14 +639,19 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-item-align: center;
       align-self: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   gap: 50px;
   background-color: #FFF9EE;
   border-left: 100px solid #FFF9EE;
@@ -951,8 +659,8 @@ html {
   padding: 50px 0px 50px 0px;
 }
 
-.mail-info .mail-text {
-  width: 10vw;
+.mail-info .mail-list {
+  width: 60vw;
 }
 
 .email-form {
@@ -987,10 +695,17 @@ html {
   height: 44px;
 }
 
-.email-form button {
+.email-form .button3 {
   background-color: #FFF9EE;
   border: 1px solid black;
   color: black;
+  font-size: 25px;
+}
+
+.email-form .button3:hover {
+  background-color: black;
+  border: 1px solid black;
+  color: #FFF9EE;
   font-size: 25px;
 }
 
@@ -1036,6 +751,8 @@ html {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   width: 25vw;
   color: #418660;
 }
@@ -1148,13 +865,15 @@ html {
     padding-top: 25px;
     line-height: 140px;
   }
-  .button2 {
-    width: 100%;
+  .mums-baking .button2 {
     margin-bottom: 25px;
-  }
-  .button2:hover {
     height: 5vh;
-    width: 100%;
+    width: 91vw;
+  }
+  .mums-baking .button2:hover {
+    margin-bottom: 25px;
+    height: 5vh;
+    width: 91vw;
   }
   .mums-baking .mums-info {
     display: -webkit-box;

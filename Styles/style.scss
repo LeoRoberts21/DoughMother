@@ -1,7 +1,5 @@
 
 
-@import './phone-main';
-
 
 /*mixins*/
 
@@ -122,6 +120,7 @@ html {
 .hero {
     @include flex(center, row);
     background-color: $lightgreen;
+    height: 601px;
 
 #sun {
     display: none;
@@ -136,6 +135,27 @@ html {
         .hero-text {
             @include sideMargin(1vh, 1vh);
             color: $darkgreen;
+
+            .welcome {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-family: "HelveticaNeue-CondensedBold";
+
+                .welcome-text {
+                    font-size: 90px;
+                }
+
+                .croissont2 {
+                    height: 8vh;
+                    width: auto;
+                }
+
+                .welcome-under {
+                    font-size: 18px;
+                }
+            }
+
 
             .button1 {
                 background-color: $darkgreen;
@@ -160,7 +180,7 @@ html {
         @include flex(center, row);
 
         #sunset-img {
-            height: auto;
+            height: 601px;
             width: 100%;
         }
     }
@@ -242,6 +262,23 @@ html {
         border-radius: 15px;
     }
 
+    .button2 {
+        background-color: $darkgreen;
+        border: 1px solid $darkgreen;
+        color: $cream;
+        font-size: $btnfont;
+        height: 5vh;
+        width: 10vw;
+        margin-top: 10px;
+        border-radius: 5px;
+    }
+    .button2:hover {
+        background-color: $cream;
+        border: 2px solid $darkgreen;
+        color: $darkgreen;
+        font-size: $btnfont;
+    }
+
     .mums-info {
         @include flex(space-between, row);
         gap: 5vw;
@@ -252,8 +289,11 @@ html {
         padding: 0;
     }
 
-    .croissont {
-        height: 5vh;
+    .mums-text {
+        width: 70vw;
+    }
+    .pie {
+        height: 9vh;
         width: auto;
     }
 }
@@ -382,15 +422,17 @@ html {
 }
 
 .mail-info {
-    @include flex(space-between, row);
+    @include flex(center, row);
+    align-self: flex-start;
+    align-items: flex-start;
     gap: 50px;
     background-color: $cream;
     border-left: 100px solid $cream;
     border-right: 100px solid $cream;
     padding: 50px 0px 50px 0px;
 
-    .mail-text {
-    width: 10vw;
+    .mail-list {
+    width: 60vw;
     }
 }
 
@@ -412,10 +454,17 @@ html {
                 
     }
 
-    button {
+    .button3 {
         background-color: $cream;
                 border: 1px solid black;
                 color: black;
+                font-size: 25px;
+    }
+
+    .button3:hover {
+        background-color: black;
+                border: 1px solid black;
+                color: $cream;
                 font-size: 25px;
     }
 }
@@ -432,6 +481,7 @@ html {
     .footer-mid {
         @include flex(space-between, column);
         align-items: flex-start;
+        align-self: flex-start;
         width: 25vw;
         color: $darkgreen;
 
@@ -557,19 +607,21 @@ html {
         padding-top: 25px;
         line-height: 140px;
      }
-
-     .button2 {
-        width: 100%;
-        margin-bottom: 25px;
-    }
-
-    .button2:hover {
-        height: 5vh;
-        width: 100%
-    }
     
      .mums-baking {
     
+
+        .button2 {
+            margin-bottom: 25px;
+            height: 5vh;
+            width: 91vw;
+        }
+    
+        .button2:hover {
+            margin-bottom: 25px;
+            height: 5vh;
+            width: 91vw;
+        }
 
         .mums-info {
             @include flex(space-between, column);
