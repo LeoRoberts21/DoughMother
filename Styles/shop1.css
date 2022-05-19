@@ -253,6 +253,15 @@ html {
   width: 100%;
 }
 
+/*------------cart---------------------------*/
+.cart-section {
+  border-top: 100px solid #FFF9EE;
+  border-left: 100px solid #FFF9EE;
+  border-right: 100px solid #FFF9EE;
+  border-bottom: 100px solid #FFF9EE;
+  background-color: #FFF9EE;
+}
+
 /*------------footer---------------------------*/
 .footer-section {
   display: -webkit-box;

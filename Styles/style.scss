@@ -159,11 +159,8 @@ html {
 .hero {
     @include flex(center, row);
     background-color: $lightgreen;
-    height: 601px;
+    height: 71vh;
 
-#sun {
-    display: none;
-}
     
     .hero-left {
         flex: 1;
@@ -219,7 +216,7 @@ html {
         @include flex(center, row);
 
         #sunset-img {
-            height: 601px;
+            height: 71vh;
             width: 100%;
         }
     }
@@ -568,37 +565,13 @@ html {
 
 
 
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
                /*--[ Mobile styles go here]---------------------------------------------------------------------------------------------------*/
 
-
-
-
                @media only screen and (max-width: 767px) {
 
-
-    
                 .top-bar {
                     @include flex(space-between, row);
                     border-left: 25px solid $cream;
@@ -635,15 +608,23 @@ html {
                 
                 .hero {
                     @include flex(center, column);
-            
-                    #sun {
-                        width: 100%;
-                        display: flex;
+                    height: 42vh;
+
+                    .hero-right {
+                        flex: 1;
+                        @include flex(center, row);
+                
+                        #sunset-img {
+                            height: 45vh;
+                            width: 100%;
+                        }
                     }
                 
                     .hero-left {
+                        border-top: 20px solid$lightgreen;
                         width: 100%;
-                
+                        height: 45vh;
+
                         .hero-text {
                             border-left: 25px solid $lightgreen;
                             border-right: 25px solid $lightgreen;
@@ -663,10 +644,7 @@ html {
         
                         }
                     }
-                
-                    #sunset-img {
-                        display: none;
-                   }
+            
                 }
             
             
@@ -759,6 +737,7 @@ html {
                     width: 100%;
                     height: auto;
                     padding-top: 10px;
+                    border-radius: 50px;
                   }
                 }  
             }

@@ -547,11 +547,7 @@ html {
       -ms-flex-align: center;
           align-items: center;
   background-color: #B2D5BE;
-  height: 601px;
-}
-
-.hero #sun {
-  display: none;
+  height: 71vh;
 }
 
 .hero .hero-left {
@@ -653,7 +649,7 @@ html {
 }
 
 .hero .hero-right #sunset-img {
-  height: 601px;
+  height: 71vh;
   width: 100%;
 }
 
@@ -1235,15 +1231,36 @@ html {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    height: 42vh;
   }
-  .hero #sun {
-    width: 100%;
+  .hero .hero-right {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-item-align: center;
+        align-self: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hero .hero-right #sunset-img {
+    height: 45vh;
+    width: 100%;
   }
   .hero .hero-left {
+    border-top: 20px solid #B2D5BE;
     width: 100%;
+    height: 45vh;
   }
   .hero .hero-left .hero-text {
     border-left: 25px solid #B2D5BE;
@@ -1259,9 +1276,6 @@ html {
   .hero .hero-left .hero-text .button1:hover {
     height: 5vh;
     width: 100%;
-  }
-  .hero #sunset-img {
-    display: none;
   }
   /*------------moving-section-----------------*/
   .scroll-slow {
@@ -1358,6 +1372,7 @@ html {
     width: 100%;
     height: auto;
     padding-top: 10px;
+    border-radius: 50px;
   }
   .location {
     display: -webkit-box;
