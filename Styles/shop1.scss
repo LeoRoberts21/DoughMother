@@ -59,6 +59,16 @@
           gap: 20px;
           width: 50px;
         }
+
+        .icons-inside {
+            flex: 1;
+            display: flex;
+            justify-content: flex-start;
+            height: 30px;
+            gap: 20px;
+            max-width: 50px;
+          }
+    
     
         .icons2 {
             flex: 1;
@@ -68,6 +78,7 @@
             gap: 20px;
             width: 50px;
           }
+
     
         .main-title {
             flex: 1;
@@ -188,6 +199,20 @@
         align-self: flex-start;
         width: 25vw;
         color: $darkgreen;
+
+            a:link {
+                color: rgb(0, 0, 0);
+                text-decoration: none;
+              }
+              
+              a:visited { 
+                text-decoration: none; 
+                color: $darkgreen;
+               }
+              
+              a:hover {
+                color: $cream;
+              }
 
         .foot-p {
             font-weight: bold;
@@ -323,6 +348,7 @@
             align-items: flex-start;
             width: 100%;
             color: $darkgreen;
+            
     
             .foot-p {
                 font-weight: bold;
