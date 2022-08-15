@@ -1,0 +1,84 @@
+/*mixins*/
+
+@mixin flex($justify,$direction) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content:$justify;
+    align-self: center;
+    align-items: center;
+}
+@mixin sideMargin($top, $bottom) {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: $top;
+    margin-bottom: $bottom;
+}
+@mixin width($width) {
+    width: $width;
+    height: auto;
+}
+
+/*variables*/
+
+$bodyfont: 15px;
+$btnfont:13px;
+
+
+$lightgreen: #B2D5BE;
+$darkgreen: #418660;
+$cream: #FFF9EE;
+
+
+/*START*/
+
+
+.top-bar {
+    @include flex(center, row);
+    border-left: 100px solid $lightgreen;
+    border-right: 100px solid $lightgreen;
+    border-top: 25px solid $lightgreen;
+    background-color: $lightgreen;
+    position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+    height: 60px;
+    max-width: 100%;
+
+    .main-title {
+        flex: 1;
+        width: 20vw;
+        height: auto;
+        display: flex;
+        align-self: center;
+    }  
+}
+
+
+.opening-page {
+    @include flex(center, column);
+    background-color: $lightgreen;
+    align-items: center;
+    align-self: center;
+    height: 100vh;   
+    width: auto;
+    color: $darkgreen;
+;
+
+    .opening-message {
+        font-size: 20vw;
+        font-family: "HelveticaNeue-CondensedBold";
+        }
+
+        .front-image {
+            height: 300px;
+            width: auto;
+        }
+
+
+        p {
+            font-size: 30px;
+            margin-right: 20px;
+        }
+
+}
+
