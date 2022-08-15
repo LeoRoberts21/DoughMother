@@ -17,7 +17,7 @@ https://leoroberts21.github.io/DoughMother/main.html
 
 A university project, I wanted to find a local business and see if I could code them a website to increase their internet presence.
 
-I wanted to build a site that was on bran and felt like an extension of their already existing company.
+I wanted to build a site that was on brand and felt like an extension of their already existing company.
 
 The biggest challenge I faced during this project was making it responsive. It was the first time I'd done this.
 
