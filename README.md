@@ -8,6 +8,10 @@ A self-initiated project for university, documenting the design and development 
 Finished
 
 ## Project Screen Shot(s)
+<img width="1438" alt="Screenshot 2023-03-08 at 18 51 14" src="https://user-images.githubusercontent.com/100042123/223807508-8314f046-2530-4505-b613-1e5d1489fe2e.png">
+<img width="1423" alt="Screenshot 2023-03-08 at 18 51 50" src="https://user-images.githubusercontent.com/100042123/223807599-46fcee9e-c214-45d2-b760-44a6042e9d40.png">
+
+
 
 ## How to access
 
